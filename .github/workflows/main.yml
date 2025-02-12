@@ -34,7 +34,7 @@ jobs:
           terraform_wrapper: false
 
       - name: Terraform Init
-        run: terraform init
+        run: terraform init -migrate-state
 
       - name: Terraform Plan
         run: terraform plan -var="db_username=${{ secrets.DB_USERNAME }}" -var="db_password=${{ secrets.DB_PASSWORD }}" -var="key_name=${{ secrets.KEY_NAME }}"
