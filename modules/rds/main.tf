@@ -7,7 +7,7 @@ resource "aws_db_subnet_group" "wordpress_db_subnet_group" {
   }
 }
 
-resource "aws_db_instance" "wordpress_db_2.0" {
+resource "aws_db_instance" "wordpress_db" {
   identifier           = "wordpress-db"
   allocated_storage    = 20
   storage_type         = "gp2"
