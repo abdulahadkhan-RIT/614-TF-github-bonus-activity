@@ -68,7 +68,7 @@ jobs:
         run: yes | terraform init -migrate-state
 
       - name: Terraform Plan Destroy
-        run: terraform plan -destroy -var="db_username=${{ secrets.DB_USERNAME }}" -var="db_password=${{ secrets.DB_PASSWORD }}" -var="key_name=${{ secrets.KEY_NAME }}" -auto-approve
+        run: terraform plan -destroy -var="db_username=${{ secrets.DB_USERNAME }}" -var="db_password=${{ secrets.DB_PASSWORD }}" -var="key_name=${{ secrets.KEY_NAME }}"
 
       - name: Terraform Destroy
-        run: terraform destroy  -var="db_username=${{ secrets.DB_USERNAME }}" -var="db_password=${{ secrets.DB_PASSWORD }}" -var="key_name=${{ secrets.KEY_NAME }}" -auto-approve -auto-approve
+        run: terraform destroy  -var="db_username=${{ secrets.DB_USERNAME }}" -var="db_password=${{ secrets.DB_PASSWORD }}" -var="key_name=${{ secrets.KEY_NAME }}" -auto-approve
