@@ -1,5 +1,5 @@
 resource "aws_db_subnet_group" "wordpress_db_subnet_group" {
-  name       = "wordpress_db_subnet_group_2.0"
+  name       = "wordpress_db_subnet_group_new"
   subnet_ids = var.subnet_ids
 
   tags = {
