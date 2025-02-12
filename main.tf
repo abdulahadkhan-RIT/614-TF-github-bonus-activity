@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket         = "tfstatebucket-wp-github-activity"  
+    bucket         = "bonusactivity"  
     key            = "terraformbonus.tfstate"           
     region         = "us-east-1"                  
   }
