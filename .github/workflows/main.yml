@@ -35,15 +35,12 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
-        working-directory: terraform/
 
       - name: Terraform Plan
         run: terraform plan
-        working-directory: terraform/
 
       - name: Terraform Apply
         run: terraform apply -auto-approve
-        working-directory: terraform/
 
   terraform_destroy:
     name: "Terraform Destroy"
@@ -69,12 +66,9 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
-        working-directory: terraform/
 
       - name: Terraform Plan Destroy
         run: terraform plan -destroy
-        working-directory: terraform/
 
       - name: Terraform Destroy
         run: terraform destroy -auto-approve
-        working-directory: terraform/
